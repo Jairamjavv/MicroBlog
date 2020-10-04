@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if title %}
-    <title>{{ title }}</title>
-    {% else %}
-    <title>Welcome Home</title>
-    {% endif %}
-</head>
+{% block content %}
 
-<body>
-    Welcome {{ user.username }}
+Welcome {{ user.username }}
 
-    <h3>Your Adorable Posts</h3>
-    {% for post in posts %}
-    <p>{{ post.author }} : {{ post.title }}</p>
-    {% endfor %}
-</body>
+<h3>Your Adorable Posts</h3>
+{% for post in posts %}
+<p>{{ post.author }} : {{ post.title }}</p>
+{% endfor %}
 
-</html>
+{% endblock %}
