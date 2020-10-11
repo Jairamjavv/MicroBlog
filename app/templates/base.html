@@ -14,7 +14,8 @@
 <body>
     <h1>MicroBlog</h1>
     <br>
-    <a href="/index">Home Page</a>
+    <a href="{{ url_for('index') }}">Home Page</a>
+    <a href="{{ url_for('login') }}">Login Page</a>
     <hr>
     {% block content %}
     {% endblock %}

@@ -1,2 +1,3 @@
 FLASK_APP=microblog.py
 FLASK_DEBUG=TRUE
+FLASK_ENV=developement

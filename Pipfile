@@ -9,6 +9,8 @@ verify_ssl = true
 flask = "*"
 python-dotenv = "*"
 autopep8 = "*"
+flask-wtf = "*"
+flask-env = "*"
 
 [requires]
 python_version = "3.8"
